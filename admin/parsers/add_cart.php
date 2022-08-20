@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/Project_ecommerce/core/init.php';
+require_once $_SERVER['DOCUMENT_ROOT']. '/mobilecity-Ecommerce/core/init.php';
 $product_id = sanitize($_POST['product_id']);
 $size =  sanitize($_POST['size']);
 $available =  sanitize($_POST['available']);

@@ -76,7 +76,7 @@
     function detailsmodel(id){
        var data = {"id" : id};
        jQuery.ajax({
-         url : '/Project_ecommerce/includes/detailsmodal.php',
+         url : '/mobilecity-Ecommerce/includes/detailsmodal.php',
          method : 'post',
          data : data, 
          success: function(data){
@@ -92,7 +92,7 @@
     function update_cart(mode,edit_id,edit_size){
         var data = {"mode": mode, "edit_id": edit_id, "edit_size" : edit_size};
         jQuery.ajax({
-            url: '/Project_ecommerce/admin/parsers/update_cart.php',
+            url: '/mobilecity-Ecommerce/admin/parsers/update_cart.php',
             method : 'post',
             data : data,
             success : function(){location.reload();},
@@ -118,7 +118,7 @@
              return;
         }else{
             jQuery.ajax({
-                url : '/Project_ecommerce/admin/parsers/add_cart.php',
+                url : '/mobilecity-Ecommerce/admin/parsers/add_cart.php',
                 method :'post',
                 data : data,
                 success : function(){

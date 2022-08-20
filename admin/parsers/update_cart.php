@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/Project_ecommerce/core/init.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/mobilecity-Ecommerce/core/init.php';
 $mode = sanitize($_POST['mode']);
 $edit_size = sanitize($_POST['edit_size']);
 $edit_id = sanitize($_POST['edit_id']);

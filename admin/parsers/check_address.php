@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/Project_ecommerce/core/init.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/mobilecity-Ecommerce/core/init.php';
 $name = sanitize($_POST['full_name']);
 $email = sanitize($_POST['email']);
 $street = sanitize($_POST['street']);

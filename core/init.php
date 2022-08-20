@@ -1,11 +1,11 @@
 <?php
-$db = mysqli_connect('127.0.0.1', 'root', '', 'mobile_city');
+$db = mysqli_connect('127.0.0.1', 'aggrey', 'secret_password', 'mobile_city');
 if(mysqli_connect_errno()){
    echo 'Database connection failied with following errors:  '.mysqli_connect_error();
    die();
 }
 session_start();
-require_once $_SERVER['DOCUMENT_ROOT'].'/Project_ecommerce/config.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/mobilecity-Ecommerce/config.php';
 require_once BASEURL.'helpers/helpers.php';
 $cart_id = '';
 if(isset($_COOKIE[CART_COOKIE])){

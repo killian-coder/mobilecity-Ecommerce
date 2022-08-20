@@ -6,65 +6,32 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit877ecf36a50915cf524712252074208c
 {
-    public static $files = array (
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
-    );
-
     public static $prefixLengthsPsr4 = array (
-        'S' => 
+        'P' => 
         array (
-            'Symfony\\Polyfill\\Mbstring\\' => 26,
-            'Symfony\\Component\\HttpFoundation\\' => 33,
-            'Symfony\\Component\\EventDispatcher\\' => 34,
-        ),
-        'O' => 
-        array (
-            'Omnipay\\PayPal\\' => 15,
+            'Psr\\Log\\' => 8,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Symfony\\Polyfill\\Mbstring\\' => 
+        'Psr\\Log\\' => 
         array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
-        ),
-        'Symfony\\Component\\HttpFoundation\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/http-foundation',
-        ),
-        'Symfony\\Component\\EventDispatcher\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/event-dispatcher',
-        ),
-        'Omnipay\\PayPal\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/omnipay/paypal/src',
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
         ),
     );
 
     public static $prefixesPsr0 = array (
-        'O' => 
+        'P' => 
         array (
-            'Omnipay\\Common\\' => 
+            'PayPal' => 
             array (
-                0 => __DIR__ . '/..' . '/omnipay/common/src',
-            ),
-        ),
-        'G' => 
-        array (
-            'Guzzle\\Tests' => 
-            array (
-                0 => __DIR__ . '/..' . '/guzzle/guzzle/tests',
-            ),
-            'Guzzle' => 
-            array (
-                0 => __DIR__ . '/..' . '/guzzle/guzzle/src',
+                0 => __DIR__ . '/..' . '/paypal/rest-api-sdk-php/lib',
             ),
         ),
     );
 
     public static $classMap = array (
-        'Omnipay\\Omnipay' => __DIR__ . '/..' . '/omnipay/common/src/Omnipay/Omnipay.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

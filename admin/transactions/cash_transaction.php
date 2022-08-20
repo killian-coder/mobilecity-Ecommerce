@@ -1,6 +1,6 @@
 <?php
 require "fpdf/fpdf.php";
-require_once $_SERVER['DOCUMENT_ROOT'].'/Project_ecommerce/core/init.php';
+require_once $_SERVER['DOCUMENT_ROOT'].'/mobilecity-Ecommerce/core/init.php';
 class  myPDF extends FPDF{
 	function header(){
 		$this->image('logo2.jpg',10,6);

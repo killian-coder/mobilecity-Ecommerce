@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'].'/Project_ecommerce/core/init.php';
+require_once $_SERVER['DOCUMENT_ROOT']. '/mobilecity-Ecommerce/core/init.php';
 if(!is_logged_in()){
   	login_error_redirect();
   }
@@ -91,7 +91,7 @@ if (isset($_POST['Add'])){
 			$allowed = array('png','jpg', 'jpeg', 'gif');
 			$uploadName = md5(microtime()).'.'.$fileExt;
 			$uploadPath = BASEURL.'image/products/'.$uploadName;
-			$dbPath = '/Project_ecommerce/image/products/'.$uploadName;
+			$dbPath = '/mobilecity-Ecommerce/image/products/'.$uploadName;
 			if($mimeType != 'image'){
 				$errors[] = 'The file must be an image.';
 			}
@@ -144,7 +144,7 @@ if(isset($_POST['Edit'])){
 			$allowed = array('png','jpg', 'jpeg', 'gif');
 			$uploadName = md5(microtime()).'.'.$fileExt;
 			$uploadPath = BASEURL.'image/products/'.$uploadName;
-			$dbPath = '/Project_ecommerce/image/products/'.$uploadName;
+			$dbPath = '/mobilecity-Ecommerce/image/products/'.$uploadName;
 			if($mimeType != 'image'){
 				$errors[] = 'The file must be an image.';
 			}
